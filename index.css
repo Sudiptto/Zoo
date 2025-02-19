@@ -1,0 +1,46 @@
+/* Reset the margin of the body to remove any default spacing */
+body {
+    margin: 0;
+}
+
+/* Style the navigation bar (Remove bullet points, default margin, padding and ensurs container is enclsoed) */
+ul.topnav {
+  list-style-type: none;
+  margin: 0; 
+  padding: 0;
+  overflow: hidden; 
+  background-color: #333; 
+}
+/* Style the list items in the navigation bar */
+ul.topnav li {
+    float: left; /* Float the list items to the left */
+}
+
+/* Style the links inside the list items */
+ul.topnav li a {
+  display: block; 
+  color: white; 
+  text-align: center; 
+  padding: 14px 16px; 
+  text-decoration: none; 
+}
+
+/* Change the background color of links on hover, except for the active link */
+ul.topnav li a:hover:not(.active) {
+    background-color: #111;
+}
+
+/* Set the background color of the active link */
+ul.topnav li a.active {
+    background-color: #04AA6D;
+}
+
+/* Float the right-aligned list items to the right */
+ul.topnav li.right {
+    float: right;
+}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
